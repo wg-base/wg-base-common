@@ -13,3 +13,9 @@ image: redis
 docker pull redis
 docker run -d --name redis -p6379:6379 redis:latest --requirepass "root"
 ```
+- mongo
+```
+image: mongo
+docker pull mongo
+docker run -d -p27017:27017 --name mongodb mongo:latest
+```
