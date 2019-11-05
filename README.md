@@ -3,21 +3,30 @@
 ##### Dcoker Container
 - mysql
 ```
-image: mysql
-docker pull mysql:5.6.45
-docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -d -p3307:3306 mysql:5.6.45
+ image: mysql
+ docker pull mysql:5.6.45
+ docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -d -p3307:3306 mysql:5.6.45
+
+# 进入mysql
+ docker exec -ti aabb bash
+ mysql -uroot -p
+ root
+
 ```
 - redis
 ```
-image: redis
-docker pull redis
-docker run -d --name redis -p6379:6379 redis:latest --requirepass "root"
+ image: redis
+ docker pull redis
+ docker run -d --name redis -p6379:6379 redis:latest --requirepass "root"
+# 进入redis
+ docker exec -ti aabb bash
+ redis-cli
 ```
 - mongo
 ```
-image: mongo
-docker pull mongo
-docker run -d -p27017:27017 --name mongodb mongo:latest
+ image: mongo
+ docker pull mongo
+ docker run -d -p27017:27017 --name mongodb mongo:latest
 
 
 1.docker exec -ti e5ff bash
