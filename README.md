@@ -1,7 +1,7 @@
 # wg-base-common
 
 ##### Dcoker Container
-- mysql
+- [X] mysql
 ```
  image: mysql
  docker pull mysql:5.6.45
@@ -13,7 +13,7 @@
  root
 
 ```
-- redis
+- [X]redis
 ```
  image: redis
  docker pull redis
@@ -22,7 +22,7 @@
  docker exec -ti aabb bash
  redis-cli
 ```
-- mongo
+- [X]mongo
 ```
  image: mongo
  docker pull mongo
