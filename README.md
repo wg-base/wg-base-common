@@ -13,7 +13,7 @@
  root
 
 ```
-- [X]redis
+- [X] redis
 ```
  image: redis
  docker pull redis
@@ -22,7 +22,7 @@
  docker exec -ti aabb bash
  redis-cli
 ```
-- [X]mongo
+- [X] mongo
 ```
  image: mongo
  docker pull mongo
